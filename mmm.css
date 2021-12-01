@@ -1,0 +1,632 @@
+html {
+    scroll-behavior: smooth;
+  }
+  *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: black;
+  color: gray;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+#nav{
+    width: 1300px;
+    background-color: blanchedalmond;
+    padding:1rem 1.5rem;
+}
+.logo{
+    margin-left: -350px;
+    flex-grow: 1;
+    flex-grow: 0.4;
+    font-family: 'Comforter Brush', cursive;
+    padding-top: 30px;
+}
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: hsl(209, 61%, 16%);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+    
+  }
+  .nav-toggle:hover {
+    color: hsla(182, 63%, 54%);
+  }
+.section {
+  padding-bottom: 5rem;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+.showlinks{
+    height: 200px;
+}
+.nav-left{
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+  font-size: 40px;
+}
+.logo{
+    padding-top: 0.5px;
+    padding-left: 325px;
+    border-style: none;
+    font-size: 50px;
+    width: 70px;
+}
+
+.nav-toogle:hover{
+    color: saddlebrown;
+    cursor: pointer;
+}
+.material-icons{
+    font-size: 40px;
+}
+.links-container{
+   height: 0;
+   overflow: hidden;
+   transition:all 0.3s linear ;
+}
+.links a {
+    background: blanchedalmond;
+    color: gray;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing:  0.25rem;
+    display: block;
+    text-decoration: none;
+    transition:all 0.3s linear;
+    font-weight: bold;
+    padding: 0.75rem 0;
+  }
+  .links a:hover {
+    color: hsl(209, 61%, 16%);
+  }
+  
+.banner{
+    background-image: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(quentin.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background:linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),url(quentin.png);
+    height: 700px;
+    display: grid;
+    width: 1300px;
+    place-items: center;
+   text-align: center;
+   
+}
+
+.container{
+    padding-bottom: 110px;
+    justify-content: center;
+}
+.text1{
+    font-family: 'Comforter Brush', cursive;
+    color: black;
+    font-size: 70px;
+}.t1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hide{
+    transition: all 0.3s linear;
+}
+
+ .img1{
+     overflow: hidden;
+     height: 0;
+     transition: 00.3s ease-in-out;
+ }
+img.lessBright {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(1.8);
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(191,167,96);
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.fixed-nav .links a{
+    color: gray;
+}
+.fixed-nav .links a:hover{
+    color: hsla(182, 63%, 54%);
+}
+.section {
+    padding-bottom: 5rem;
+  }
+  
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  @media screen and (max-width:500px) {
+      .nav-toggle{
+          margin-right: 800px;
+      }
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+    }
+  }
+  @media screen and (min-width: 800px) {
+    nav {
+      background: transparent;
+    }
+    .nav-left {
+      width: 90vw;
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-header {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links-container {
+        text-align: center;
+      height: auto !important;
+      margin-left:-300px;
+    }
+    .logo{
+        margin-left: -390px;
+        margin-top: 50px;
+    }
+    .img1{
+        height: auto !important;
+        padding-left: 80px;
+    }
+    .links {
+      display: flex;
+    }
+    .links a {
+      background: transparent;
+      color: gray;
+      font-size: 1.1rem;
+      text-transform: capitalize;
+      letter-spacing: 0.25rem;
+      display: block;
+      transition: all 0.3s linear;
+      margin: 0 1rem;
+      font-weight: bold;
+      padding: 0;
+    }
+    .links a:hover {
+      color: black;
+      cursor: pointer;
+    }
+    .links a:active{
+        color: hsla(182, 63%, 54%);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container  {
+      max-height: 340px;
+    }
+  }
+  /* sections and title */
+  .title h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .title span {
+    color: hsla(182, 63%, 54%)
+  }
+  #about{
+      background:blanchedalmond;
+      display:grid;
+      text-align: center;
+      width: 1300px;
+      
+  }
+  .passion{
+    background:url(passion.jpeg) no-repeat ;
+    background-size: cover;
+    width: 1100px;
+    height: 400px;
+    display: flex;
+    border-radius: 1rem;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  .fun{
+    font-family: 'Estonia', cursive;
+    color: rgba(191,167,96);
+    font-size: 30px;
+    font-style:italic;
+  }
+       .arrow-container{
+         margin-top: -40px;
+       }
+       .arrow-container1{
+        margin-top: 320px;
+        margin-left: 20px;
+      }
+      .arrow-container2{
+        margin-top: 320px;
+        margin-left: 20px;
+      }
+  .music{
+    color:black;
+    font-size: 20px;
+    font-family: 'Permanent Marker', cursive;
+  }
+  .resizeImg{
+    width: 300px;
+    height: 400px;
+    margin-top: 80px;
+    margin-left: 100px;
+   background-size: cover;
+  }
+  .resizeText{
+    width: 500px;
+    height: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .passion2{
+    background:blanchedalmond;
+    width: 1100px;
+    height: 400px;
+    display:flex;
+    border-radius: 1rem;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+  #right{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+  }
+  #right1{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+  }
+
+  #right2{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+  }
+  #right:hover{
+    color: gray;
+    cursor: pointer;
+}
+  #right1:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  #right2:hover{
+    color: gray;
+    cursor: pointer;
+}
+  #left{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+    flex-grow: 1;
+  }
+  #left1{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+    flex-grow: 1;
+  }
+  #left2{
+    margin-top: 35px;
+    font-size: 55px;
+    color: black;
+    flex-grow: 1;
+  }
+  #left:hover{
+    color: gray;
+    cursor: pointer;
+}
+  #left1:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  #left2:hover{
+    color: gray;
+    cursor: pointer;
+}
+  #journey{
+    height: 350vh;
+    background-color: blanchedalmond;
+    top: 0;
+    left: 0;
+    width: 1300px;
+    display: grid;
+      text-align: center;
+  }
+  .nylon{
+    display: flex;
+  }
+ .nylon-img{
+   background:url("nylon.jpeg") no-repeat;
+   background-size: cover;
+   height: 350px;
+   width:500px;
+   border-radius: 1rem;
+   margin-top: 80px;
+    margin-left: 100px;
+ }
+ .uni-douala{
+   display:flex;
+ }
+ .confucius{
+   display: flex;
+ }
+ .confucius-img{
+  height: 330px;
+  width:500px;
+  border-radius: 1rem;
+  margin-top: -15px;
+   margin-left: 100px;
+ }
+ .douala-img{
+  height: 330px;
+  width:500px;
+  border-radius: 1rem;
+  margin-top: -15px;
+   margin-left: 100px;
+ }
+ .nylon-text{
+  margin-top: 60px;
+  margin-left: 100px;
+  color:black;
+  font-size: 20px;
+  font-family: 'Permanent Marker', cursive;
+ }
+ .douala-text{
+  margin-top: -495px;
+  margin-left: 700px;
+  color:black;
+  font-size: 20px;
+  font-family: 'Permanent Marker', cursive;
+ }
+ .confucius-text{
+  margin-top: -495px;
+  margin-left: 700px;
+  color:black;
+  font-size: 20px;
+  font-family: 'Permanent Marker', cursive;
+ }
+  #about,
+  #services,
+  #tours {
+    height: 90vh;
+  }
+  #services {
+    background: hsla(182, 63%, 54%);
+  }
+  footer {
+    background: hsla(182, 63%, 54%);
+    padding: 5rem 1rem;
+  }
+  footer p {
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    margin-bottom: 0;
+  }
+  
+  .top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background:black;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    border-radius: 0.25rem;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+
+  }
+  #house{
+      animation: bounce 2s ease-in-out infinite;
+  }
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .loop{
+      height: 300px;
+      width:300px;
+      margin-left: 60px;
+      margin-top: 60px;
+      background-color: rgba(191,167,96);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 30px;
+  }
+  .para{
+      text-align: center;
+      color: whitesmoke;
+      font-style: bold;
+      
+      font-family: 'Bebas Neue', cursive;
+      width: 500px;
+      margin-top: 60px;
+      background-color: gray;
+      margin-left: 260px;
+      -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 30px;
+  }
+  @media only screen and (max-width:600px) {
+    .div-about{
+        overflow: hidden;
+         margin-left: 50px;
+         height: 200px;
+         width: 400px;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .link-go:hover{
+         opacity: 1;
+     }
+     .link-go{
+         font-size: 22px;
+     
+       width: 400px;
+       margin-top: 168px;
+       color:gray;
+       background-color: black;
+       transition: all 0.3s ease-in-out;
+       opacity: 0;
+       cursor: pointer;
+       font-family: 'Dancing Script', cursive; ;
+       font-weight: bolder;
+       text-align: center;
+     }
+  
+    .loop{
+        height: 200px;
+        width:150px;
+        margin-left: 30px;
+        margin-top: 100px;
+        background-color: rgba(191,167,96);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 30px;
+    }
+    .para{
+        color: whitesmoke;
+        font-style: bold;
+        font-size: 18px;
+        font-family: 'Bebas Neue', cursive;
+        background-color: gray;
+        text-align: center;
+        margin-top: 100px;
+        height: 300px;
+        width: 300px;
+        margin-left: 85px;
+        -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border-radius: 30px;
+    }
+    .title1{
+        font-size: 25px;
+        color: whitesmoke;
+    }
+  }
+  .title1{
+      text-decoration: underline;
+      font-weight: bolder;
+      font-size: 50px;
+      color: black;
+      font-family: 'Dancing Script', cursive;
+  }
+  @media only screen and (min-width:601px) {
+      .arrow-block{
+          display: flex;
+          margin-left: 580px;
+      }
+      .div-about{
+        overflow: hidden;
+         margin-left: 480px;
+         height: 200px;
+         width: 400px;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+     .link-go:hover{
+         opacity: 1;
+     }
+     .link-go{
+         font-size: 22px;
+     
+       width: 400px;
+       margin-top: 168px;
+       color:gray;
+       background-color: black;
+       transition: all 0.3s ease-in-out;
+       opacity: 0;
+       cursor: pointer;
+       font-family: 'Dancing Script', cursive; ;
+       font-weight: bolder;
+       text-align: center;
+     }
+      
+}
+#contact{
+  color: darkorange;
+  background-color: blanchedalmond;
+  display: grid;
+  justify-content: center;
+  margin-left: -5px;
+  width: 1300px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 160px;
+  font-family: 'Bebas Neue', cursive;
+}
+img{
+  height: 30px;
+  width: 30px;
+  border-radius: 1rem;
+}
+img:hover{
+  cursor: pointer;
+  animation: bounce ease-in-out 3s infinite;
+}
+.details{
+  text-align: center;
+ }
